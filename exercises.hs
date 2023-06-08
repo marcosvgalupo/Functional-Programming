@@ -1,3 +1,6 @@
+import Data.Char
+import Data.List
+
 -------------Exercise 1---------------
 
 fact::Int->Int
@@ -98,10 +101,10 @@ zerosInPeriod x
 
 --d)
 badDays::Int->Int->[Int]
-badDays valor periodo
-  |  periodo == -1 = []
-  |  sales periodo < valor = badDays valor (periodo-1) ++ [periodo]
-  |  otherwise = badDays valor (periodo-1)
+badDays value period
+  |  period == -1 = []
+  |  sales period < value = badDays value (period-1) ++ [period]
+  |  otherwise = badDays value (period-1)
 
 
 -----------------------------Exercise 10-------------------------------
@@ -127,3 +130,82 @@ antFib x y
 
 funny::Int->Int->Int->Bool
 funny x y z = x > z || y < x
+
+
+------------------------------Exercise 12------------------------------
+
+
+myToUpper::Char->Char
+myToUpper x
+  | ord x >= 65 && ord x <= 90 = x
+  | otherwise = chr(ord x - 32)
+
+------------------------------Exercise 13------------------------------
+
+
+asciiValue::Char->Int
+asciiValue x
+  | ord x >= 48 && ord x <= 57 = ord x
+  | otherwise = -1
+
+
+------------------------------Exercise 14------------------------------
+
+duplicateString::String->Int->String
+duplicateString s n 
+  | n == 0 = ""
+  | otherwise = s ++ duplicateString s (n-1)
+
+
+------------------------------Exercise 15------------------------------
+
+pushRight::String->Int->String
+pushRight s n
+  | n > length s = ">" ++ pushRight s (n-1)
+  | otherwise = s
+
+------------------------------Exercise 16------------------------------
+
+
+invertList::[Int]->[Int]
+invertList [] = []
+invertList (a:x) = invertList x ++ [a]
+
+------------------------------Exercise 17------------------------------
+
+allOdd::[Int]->[Int]
+allOdd [] = []
+allOdd (a:x)
+  | odd a = a : allOdd x
+  | otherwise = allOdd x
+
+allEven::[Int]->[Int]
+allEven [] = []
+allEven (a:x)
+  | even a = a : allEven x
+  | otherwise = allEven x
+
+
+separateOddAndEven::[Int]->([Int],[Int])
+separateOddAndEven x = (allOdd x, allEven x)
+
+------------------------------Exercise 18------------------------------
+
+myAlphabet::[Int]->String
+myAlphabet [] = ""
+myAlphabet (a:x) 
+  | a >= 1 && a <= 26 = chr(a+64) : myAlphabet x
+  | otherwise = ""
+
+------------------------------Exercise 19------------------------------
+
+duplicateByNumber::[Int]->[Int]
+duplicateByNumber [] = []
+duplicateByNumber (a:x) = multiply a a ++ duplicateByNumber x
+
+
+
+
+
+
+
