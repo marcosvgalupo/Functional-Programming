@@ -54,8 +54,17 @@ from a collection of m objects.</p>
 
 ##
 <b>Q9)</b> 
-<p>[EN-US]  .</p>
-<p>[PT-BR] .</p>
+<p>[EN-US] According to sales function <code>sales::Int->Int</code>, do the following:
+<p>a) Create the <code>howManyLess</code> function that calculates how many days sales were lower than a given value, within a range of days.</p>
+<p>b) Create the function <code>noZeroInPeriod::Int->Bool</code> which returns True only if there is no day in the period where the number of sales was zero.</p>
+<p>c) Create the function <code>zerosInPeriod::[Int]</code> function that returns the list of days when sales were zero.</p>
+<p>d) Create a function that return the list of days when sales were below a given value.</p>
+<br>
+<p>[PT-BR] De acordo com a função sales(vendas), <code>sales::Int->Int</code>, faça o seguinte:
+<p>a) Implemente a função <code>howManyLess</code> que calcule quantos dias as vendas foram inferiores a um dado valor, dentro de um intervalo de dias.
+<p>b) Crie a função <code>noZeroInPeriod::Int->Bool</code> que retorne True apenas se nenhum dia do período de vendas for zero.
+<p>c) Implemente a função <code>zerosInPeriod::[Int]</code> que retorne a lista dos dias em que as vendas foram de zero.
+-<p>d) Crie uma função que retorne uma lista dos dias em que as vendas foram abaixo de um valor passado como parâemtro..</p>
 
 
 ##
@@ -75,3 +84,48 @@ from a collection of m objects.</p>
 <code>  |otherwise = True</code></p>
 
 ##
+<b>Q12)</b> 
+<p>[EN-US] Create a function that convert a character to Upper case.</p>
+<p>[PT-BR] Crie uma função que converta um caracter para maiúsculo.</p>
+
+
+##
+<b>Q13)</b> 
+<p>[EN-US] Create a function that return the ASCII value of any <var>x</var> number character. If the input is not a digit, returns -1.</p>
+<p>[PT-BR] Crie uma função que retorne o valor ASCII do caracter de número <var>x</var> qualquer. Se a entrada não for um dígito, retorne -1.</p>
+<p>Ex: asciiValue '3' -> returns:  51
+  
+ ##
+<b>Q14)</b> 
+<p>[EN-US] Create a function that receive as input a string <var>s</var> and a number <var>n</var> and returns <var>s</var> concatenated <var>n</var> times with itself. If <var>n</var> == 0, returns "".</p>
+<p>[PT-BR] Crie uma função que receba uma string <var>s</var> qualquer e um número <var>n</var> qualquer, que retorne <var>s</var> concatenada <var>n</var> vezes com ela própria. Se <var>n</var> == 0, retorne "".</p>
+
+##
+<b>Q15)</b> 
+<p>[EN-US] Create a function that, given a string <var>s</var> and any number <var>n</var>, returns <var>s</var> concatenated with '>' <var>t</var> times such that <code>length(s)</code> + <var>t</var> == <var>n</var>.</p>
+<p>[PT-BR] Crie uma função que, dada uma string<var>s</var> e um número <var>n</var> qualquer, retorne <var>s</var> concatenada <var>t</var> vezes com '>' tal que <code>length(s)</code> + <var>t</var> == <var>n</var>.</p>
+<p>Ex: s == "hello" and n == 7; returns: ">>hello"
+
+##
+<b>Q16)</b> 
+<p>[EN-US] Create a function that invert an integer list.
+<p>[PT-BR] Crie uma função que inverta uma lista de inteiros.</p>
+
+
+##
+<b>Q17)</b> 
+<p>[EN-US]  Create a function that, given a list of integers, returns a tuple that contains the list of odd numbers and the list of even numbers. ([odd], [even]).</p>
+<p>[PT-BR] Crie uma função que, dada uma lista de inteiros, retorne uma tupla que contenha a lista dos ímpares e a lista dos pares. ([ímpare], [pares]).</p>
+
+##
+<b>Q18)</b> 
+<p>[EN-US] Write a function that, given a list of integers, returns a string containing the letters in the alphabet according to the positions indicated in the list.</p>
+<p>[PT-BR] Escreva uma função que, dada uma lista de inteiros, retorne uma string contendo as letras no alfabeto correspondentes com as posições indicadas na lista.</p>
+<p>Ex: [1,2,4] -> returns: "ABD"
+  
+
+##
+<b>Q19)</b> 
+<p>[EN-US] Create a function in Haskell that, given an integer list, returns the list with duplicate numbers according to the number itself.</p>
+<p>[PT-BR] Crie uma função em Haskell que, dada uma lista de inteiros, retorne a lista com números duplicados de acordo com o próprio número.</p>
+<p>Ex: [1,2,3] -> returns: [1,2,2,3,3,3] </p>
