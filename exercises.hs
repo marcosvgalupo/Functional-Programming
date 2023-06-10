@@ -199,10 +199,13 @@ myAlphabet (a:x)
 
 ------------------------------Exercise 19------------------------------
 
+multiply::Int->Int->[Int]
+multiply  x 1 = [x]
+multiply x a = x : multiply x (a-1)
+
 duplicateByNumber::[Int]->[Int]
 duplicateByNumber [] = []
 duplicateByNumber (a:x) = multiply a a ++ duplicateByNumber x
-
 
 
 
