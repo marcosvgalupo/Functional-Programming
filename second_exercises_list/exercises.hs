@@ -12,9 +12,9 @@ pyths n = [(a,b,c) | a <- [1 .. n], b <- [1 .. n], c <-[1 .. n], a^2 + b^2 == c^
 
 ------------------EXERCISE 4 --------------------------------
 
-divisors n = [a | a <- [1 .. (n`div`2)], n `mod` a == 0]
+dividers n = [a | a <- [1 .. (n`div`2)], n `mod` a == 0]
 
-perfects x = [a | a <- [1 .. x], a == sum (divisors a)]
+perfects x = [a | a <- [1 .. x], a == sum (dividers a)]
 
 ------------------EXERCISE 5 --------------------------------
 
