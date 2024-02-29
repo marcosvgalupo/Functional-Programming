@@ -27,11 +27,12 @@ This list of exercises has as main objective use high order functions and list c
 # 
 <b>Q5)</b>
 <p>Define the function find used in the function positions.</p>
-<p><code>positions :: Eq a => a->[a]->[Int]</code>
-<br>
-<code>positions x xs = find x (zip xs [0..n]) </code>
-<br>
-<code>where n = (length xs) - 1</code></p>
+
+```haskell
+positions :: Eq a => a->[a]->[Int]
+positions x xs = find x (zip xs [0..n])
+  where n = (length xs) - 1
+```
 
 # 
 <b>Q6)</b>
@@ -49,6 +50,6 @@ This list of exercises has as main objective use high order functions and list c
 
 # 
 <b>Q9)</b>
-<p>Define a function <code>decToInt :: [Int]->Int</code> that converts a decimal number into an integer.</p>
+<p>Define a function <code>decToInt :: [Int]->Int</code> that converts a list into an integer.</p>
 <p>Ex: decToInt [1,2,3] -> returns: 123.</p>
 
