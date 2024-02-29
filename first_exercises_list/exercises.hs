@@ -46,7 +46,7 @@ myGcd x y
 howManyMultiples::Int->Int->Int->Int
 howManyMultiples x a b
   | b == a = 0
-  | b `mod` x == 0 = a + howManyMultiples x a (b-1)
+  | b `mod` x == 0 = 1 + howManyMultiples x a (b-1)
   |otherwise = howManyMultiples x a (b-1)
 
 -------------Exercise 7---------------
